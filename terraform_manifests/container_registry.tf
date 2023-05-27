@@ -4,4 +4,5 @@ module "azurerm_container_registry" {
   rg_location   = var.rg_location
   rg_name       = var.rg_name
   sku           = "Basic"
+  depends_on = [ azurerm_resource_group.rg01 ]
 }
