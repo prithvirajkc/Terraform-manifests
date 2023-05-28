@@ -22,3 +22,8 @@ variable "aks_name" {
   type        = string
   description = "Name of the Kubernetes"
 }
+
+variable "dns_name" {
+  type = string 
+  description = "Name of the dns zone"
+}
